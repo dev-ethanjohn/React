@@ -1,0 +1,24 @@
+* {
+  font-family: 'Space Grotesk', monospace;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-items {
+  list-style-type: none;
+  display: flex;
+  font-size: 1.2rem;
+}
+
+#react-logo {
+  width: 70px;
+}
+
+.nav-items > li {
+  padding: 10px;
+  font-weight: 600;
+}
