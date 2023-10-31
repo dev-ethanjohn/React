@@ -32,17 +32,30 @@ excited to be learning React :)
 
 Render your list to the page
 
+PART 2:
+
+- Add a `header` element with a nested `nav` element. Inside the `nav`, include a `img` element with the image of the React logo and make sure to set the width to something more manageable so it doesn't take up the whole screen. 
+- Add an `h1` w/ some text describing the page.
+- Add a `footer` after the list that says: "© 20xx <last name here> development. All rights reserved."
  */
 
 function Hero() {
   return (
     <div>
+      <header>
+        <nav>
+          <img src="/images/react.png" alt="react logo" width="200px" />
+        </nav>
+      </header>
       <h1>Reasons why React is so a must have JS library</h1>
       <ol>
         <li>React is versatile and easy to use.</li>
         <li>In demand and most used JS library.</li>
         <li>Building programs with React is declarative and composable</li>
       </ol>
+      <footer>
+        <small>© 2021 Paguntalan development. All rights reserved.</small>
+      </footer>
     </div>
   );
 }
