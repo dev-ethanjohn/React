@@ -1,26 +1,18 @@
 import { useState } from 'react';
-import instagram from './instagram.png';
+
+//components
+import Main from './components/Main.jsx';
+import Navbar from './components/Navbar';
 
 import './App.css';
 
 function App() {
-  const [count, setCount] = useState(0);
+  // const [count, setCount] = useState(0);
 
   return (
     <>
-      <img src={instagram} alt="instagram-logo" className="logo" />
-      <h1>Instagram </h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <Navbar />
+      <Main />
     </>
   );
 }
